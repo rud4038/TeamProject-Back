@@ -38,8 +38,6 @@ public class MemberController {
 	
 	@PostMapping("/login")
 	public ResponseDto<SignInResponseDto> logIn(@RequestBody MemberLoginDto login) {
-		System.out.println(login);
-		System.out.println("hi");
 		ResponseDto responseDto = memberService.login(login);
 		return responseDto;
 	}

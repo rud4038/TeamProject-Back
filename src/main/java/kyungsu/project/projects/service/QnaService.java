@@ -43,7 +43,6 @@ public class QnaService {
 			QnaoutDtos.add(new QnaOutDto(qnalistEntity));
 		}
 		System.out.println(QnaoutDtos);
-	//responsedto 만들어줘야할듯.
 		return ResponseDto.setSuccess(QnaoutDtos);
 	}
 	
